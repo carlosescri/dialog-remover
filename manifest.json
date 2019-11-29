@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Dialog Remover",
+  "version": "1.0.0",
+  "description": "Remove nasty cookies / privacy messages from different services",
+  "author": "Carlos Escribano Rey <https://carlosescribano.com>",
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["dialog-remover.js"]
+  }],
+  "icons": {
+    "48": "icon-48.png"
+  }
+}
