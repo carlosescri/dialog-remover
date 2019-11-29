@@ -1,8 +1,7 @@
 const INTERVAL = 50;
-const MAX_TIME = 10000;
+const MAX_TIME = 5000;
 
 function _remove(fn, limit) {
-  console.log(`trying to remove ${fn.name}…`);
   if (fn()) {
     console.log(`removed ${fn.name}!`);
   } else if (limit >= 0) {
