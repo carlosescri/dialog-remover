@@ -24,6 +24,11 @@ function quantcast() {
   }
 }
 
-window.addEventListener('load', (e) => {
-  remove(quantcast);
-});
+function quantcast2() {
+  document.querySelectorAll('.qc-cmp2-container').forEach(x => x.remove());
+}
+
+window.addEventListener('load', (e) => Promise.all([
+  remove(quantcast),
+  remove(quantcast2)
+]));
